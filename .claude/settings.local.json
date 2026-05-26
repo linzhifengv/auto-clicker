@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n '\\\\$[^{\\(]' \"app\\\\src\\\\main\\\\java\\\\com\\\\example\\\\autoclick\\\\task\\\\TaskScheduler.kt\")",
+      "Bash(grep -v '^\\\\s*//')"
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E6333333"
+    android:padding="12dp"
+    android:elevation="8dp">
+
+    <!-- 状态显示 -->
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="就绪"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tv_step_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="步骤: -"
+        android:textColor="#CCCCCC"
+        android:textSize="11sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="循环: 0 | 成功: 0"
+        android:textColor="#CCCCCC"
+        android:textSize="11sp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- 倒计时显示 -->
+    <TextView
+        android:id="@+id/tv_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF9800"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <!-- 坐标设置 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <Button
+            android:id="@+id/btn_set_lingqu"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="设坐标:领取"
+            android:textSize="10sp"
+            android:layout_marginEnd="4dp"
+            android:minWidth="72dp" />
+
+        <Button
+            android:id="@+id/btn_set_jiangli"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="设坐标:奖励"
+            android:textSize="10sp"
+            android:minWidth="72dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_coords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="坐标: 未设置"
+        android:textColor="#AAAAAA"
+        android:textSize="10sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 控制按钮 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="开始"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp"
+            android:minWidth="56dp" />
+
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="暂停"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp"
+            android:minWidth="56dp" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="停止"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp"
+            android:minWidth="56dp" />
+
+        <Button
+            android:id="@+id/btn_minimize"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="最小化"
+            android:textSize="12sp"
+            android:minWidth="56dp" />
+    </LinearLayout>
+</LinearLayout>

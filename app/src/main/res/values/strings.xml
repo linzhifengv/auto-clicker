@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">自动点击器</string>
+    <string name="accessibility_service_description">此服务用于自动执行点击操作，帮助完成重复性任务。</string>
+</resources>
